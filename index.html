@@ -1,0 +1,31 @@
+```javascript
+// tailwind.config.js
+module.exports = {
+  // ... other configurations ...
+  content: [ 
+    './index.html', 
+    './src/**/*.{js,ts,jsx,tsx}',
+    './public/**/*.html' // Add this line if you're using HTML files in the 'public' directory
+  ],
+  theme: {
+    extend: {
+      // ... your custom theme ...
+    },
+  },
+  plugins: [],
+};
+```
+
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tailwind CSS Example</title>
+  <link href="/output.css" rel="stylesheet">
+</head>
+<body>
+  <div class="p-4 bg-blue-500 text-white">Hello, Tailwind!</div>
+</body>
+</html>
+```
